@@ -289,7 +289,7 @@ html {
     color: white
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     html {
         font-size: 10px;
     }
