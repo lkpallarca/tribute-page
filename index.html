@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/my-logo/favicon.ico">
+    <link rel="icon" type="image/gif" href="/my-logo/animated_favicon1.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Tribute Page for Markiplier</title>
+</head>
+<body>
+    <section id="main"> <!--user story 1-->
+        <div id="nav">
+            <p onclick="tpabt()">
+                About
+            </p>
+            <p onclick="tpvid()">
+                Videos
+            </p>
+            <p onclick="tpmr()">
+                More
+            </p>
+            <p onclick="tpmt()">
+                My Thoughts
+            </p>
+        </div>
+        <div id="abt" class="zro">
+            About
+        </div>
+        <h1 id="title"> <!--user story 2-->
+            King of FNAF
+        </h1>
+
+        <div id="img-div"> <!--user story 3-->
+            <img id="image" src="/images/mark-2.png" alt="Mark Fischbach closeup picture"> <!--user story 4-->
+            <p id="img-caption"> <!--user story 5-->
+                Mark Edward Fischbach 
+            </p>
+        </div>
+
+        <p id="tribute-info"> <!--user story 6-->
+            better known as Markiplier, is an American YouTuber, podcast host, and filmmaker. Originally from Honolulu, Hawaii, he began his career in Cincinnati, Ohio. 
+            As well as uploading videos on his main YouTube channel, he is the co-founder of clothing company Cloak with fellow YouTuber Jacksepticeye, is the co-host for the Distractable podcast alongside LordMinion777 and Muyskerm, 
+            and the co-host of the now defunct [REDACTED] channel. 
+        </p>
+
+        <div id="vid" class="zro">
+            Videos
+        </div>
+
+        <p class="info">
+            Here are some of my favorite videos of him, hover on the image and click the title to check them out!
+        </p>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item image1">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=iOztnsBPrAA&list=PL3tRBEVW0hiDL09lO0xjKEix84OY27xet" target="_blank">Five nights at Freddy's</a> <!--user story 7-->
+            </div>
+            <div class="item image2">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=PdVOMop2CAA&t=1s" target="_blank">UNO</a> <!--user story 7-->
+            </div>
+            <div class="item image3">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=6EbkpRkulDI" target="_blank">Huniepop 2</a> <!--user story 7-->
+            </div>
+            <div class="item image4">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=TlQ84jvjz2c&list=PL3tRBEVW0hiA1oEjmq76MId3-EghIfsCx" target="_blank">Phasmophobia</a> <!--user story 7-->
+            </div>
+            <div class="item image5">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=3nqd0mQAaFI&list=PL3tRBEVW0hiDR4Q_ELqHvxcDqd4uvzbeO" target="_blank">Pogostuck</a> <!--user story 7-->
+            </div>
+            <div class="item image6">
+                <a id="tribute-link" href="https://www.youtube.com/watch?v=AhYCWjpb5Jc&list=PL3tRBEVW0hiCLJHISDKnlPJ7Jr6fPmiHs" target="_blank">GTFO</a> <!--user story 7-->
+            </div>
+        </div>
+
+        <section>
+            <div id="mr" class="zro">
+                More
+            </div>
+            <div class="frst">
+                <div class="frst1"> <!--user story 10-->
+                    <h2>Merchandise</h2>
+                    <p>
+                        In 2018, Markiplier announced the launch of a new fashion brand called Cloak, in a joint venture with Jacksepticeye. The brand was envisioned and launched as a gamer-focused athleisure line distinct from their personal merchandise. The brand has released collaborations with Mojang Studios, Five Nights at Freddy's, and The Oregon Trail.
+                        In 2020, fellow YouTuber and streamer Pokimane joined Cloak as a partner and creative director.
+                    </p>
+                </div>
+
+                <div class="frst1"> <!--user story 10-->
+                    <h2>Philantropy</h2>
+                    <p>
+                        Fischbach has participated in multiple charity live streams and fundraisers.In 2017, Forbes reported that Fischbach and his fans raised around $3 million for charity through these events. 
+                        In March 2018, in celebration of reaching 20 million subscribers, Fischbach announced he would donate all proceeds from a 48-hour sale of his "Tasteful Nudes" Charity Calendar to the Cancer Research Institute; he raised over $490,000 for the charity and won the 2020 Oliver R. Grace Award.
+                    </p>
+                </div>
+            </div>
+            <div class="frst1"> <!--user story 10-->
+                <h2>Recognition</h2>
+                <p>
+                    Following his passion over the years, here is a short list of his Awards and Nominations.    
+                </p>
+                <button onclick="reveal()" class="btn">
+                    Show
+                </button>
+                <img id="awrds" class="acc" src="/images/awards.PNG" alt="a list of Markiplier's accomplishments">
+            </div>
+        </section>
+
+        <a href="https://en.wikipedia.org/wiki/Markiplier" target="_blank"><img class="fixed" src="/images/mark-1.png" alt="Markiplier model pose"></a>
+
+    </section>
+
+    <section>
+        <div id="mt" class="zro">
+            My Thoughts
+        </div>
+        <div class="scnd">
+            <div class="scnd1">
+                <h3>
+                    Why is he my idol?
+                </h3>
+                <p>
+                    Because I can see his passion and great attitude through his consistent videos online.
+                </p>
+            </div>
+            <div class="scnd1">
+                <h3>
+                    How did he impact my life?
+                </h3>
+                <p>
+                    Through his content, I can smile and connect with him. His videos are playing in the background whenever I'm doing any tasks.
+                </p>
+            </div>
+            <div class="scnd1">
+                <h3>
+                    What is my favorite quote of his?
+                </h3>
+                <p>
+                    YOU RIGHT!
+                </p>
+            </div>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+</body>
+</html>

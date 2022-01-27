@@ -1,0 +1,389 @@
+html {
+    background-color: black;
+    font-family: lato, sans-serif;
+    color: rgb(37,133,159);
+    user-select: none;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    opacity: 50%;
+    transition: opacity 0.7s;
+}
+
+#nav:hover {
+    opacity: 100%;
+}
+
+#nav p {
+    color: white;
+    background-color: rgb(37,133,159);
+    padding: 10px 20px;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#title {
+    text-align: center;
+}
+
+#img-div {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center; /* user story 9 */
+    align-items: center; /* user story 9 */
+    width: 300px;
+    flex-direction: column;
+}
+
+#image {
+    max-width: 100%;
+}
+
+#img-caption {
+    background-color: rgb(31,33,32);
+    color: white;
+    padding: 2px 10px;
+    font-size: 25px;
+}
+
+#img-caption::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    border-bottom: 2px solid red;
+    margin-top: 10px;
+}
+
+#tribute-info {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -10px;
+    margin-bottom: 100px;
+    width: 800px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.info {
+    text-align: center;
+    font-size: 20px;
+}
+
+.owl-carousel .owl-theme .owl-loaded {
+    position: relative;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    position: absolute;
+    left: 50%;
+    margin-top: -25px;
+    transform: translate(-50%, -50%);
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: red;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: rgb(37,133,159);
+    transition: all 0.5s linear 0s;
+    height: 10px;
+    width: 10px;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(31,33,32);
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    padding: 2px 2px;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: visibility 0.7s;
+}
+
+.image1 {
+    background-image: url("/images/fnaf.png");
+}
+
+.image1:hover #tribute-link {
+    visibility: visible;
+}
+
+.image2 {
+    background-image: url("/images/uno.png");
+}
+
+.image2:hover #tribute-link {
+    visibility: visible;
+}
+
+.image3 {
+    background-image: url("/images/huniepop2.png");
+}
+
+.image3:hover #tribute-link {
+    visibility: visible;
+}
+
+.image4 {
+    background-image: url("/images/phasmophobia.png");
+}
+
+.image4:hover #tribute-link {
+    visibility: visible;
+}
+
+.image5 {
+    background-image: url("/images/pogostuck.png");
+}
+
+.image5:hover #tribute-link {
+    visibility: visible;
+}
+
+.image6 {
+    background-image: url("/images/gtfo.png");
+}
+
+.image6:hover #tribute-link {
+    visibility: visible;
+}
+
+.item {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.zro {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.zro::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    border-bottom: 2px solid red;
+}
+
+.frst {
+    display: flex;
+}
+
+.frst1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.frst1 h2 {
+    background-color: rgb(31,33,32);
+    color: white;
+    padding: 2px 50px;
+}
+
+.frst1 p {
+    text-align: center;
+    margin-top: -10px;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.btn {
+    width: 100px;
+    border-radius: 12px;
+    background-color: rgb(31,33,32);
+    border-color: transparent;
+    color: white;
+}
+
+#awrds {
+    width: 800px;
+}
+
+.acc {
+    margin-top: 10px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.scnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scnd1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content
+}
+
+.scnd1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    border-bottom: 2px solid white;
+    margin-top: 60px;
+}
+
+.scnd1 h3 {
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.scnd p {
+    width: 50%;
+    margin-left: 10px;
+    color: white
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 10px;
+    }
+
+    #title {
+        font-size: 10px;
+    }
+
+    #image { 
+        width: 150px; /* user story 8 */
+    }
+
+    .zro {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .zro::after {
+        width: 250px;
+    }
+
+    #img-caption {
+        font-size: 10px;
+    }
+
+    #img-caption::after {
+        width: 250px;
+    }
+
+    #tribute-info {
+        width: fit-content;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    #tribute-link {
+        font-size: 13px;
+        margin-bottom: -10px;
+    }
+
+    .frst {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav p {
+        color: white;
+        background-color: rgb(37,133,159);
+        padding: 2px 5px;
+    }
+
+    .info {
+        font-size: 10px;
+    }
+
+    .item {
+        margin-top: -50px;
+        margin-bottom: -30px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        height: 8px;
+        width: 8px;
+    }
+
+    #awrds {
+        width: 300px;
+    }
+
+    .fixed {
+        display: none;
+    }
+
+    .scnd1 {
+        flex-direction: column;
+    }
+
+    .scnd1 h3 {
+        width: 50%;
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    .scnd p {
+        width: 50%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: -8px;
+        color: white;
+    }
+
+    .scnd1::after {
+        display: none;
+    }
+
+}
